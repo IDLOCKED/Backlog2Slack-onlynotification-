@@ -47,7 +47,7 @@ if($notification_cnt['count']){
         //新着分だけ成形
         for ($i=0; $i < $notification_cnt['count']; $i++) { 
             $slack_posts['name']    = $notifications[$i]['sender']['name'];
-            $slack_posts['url']     = 'https://' .Spaceid .'.backlog.jp/view/'.$notifications[$i]['issue']['issueKey'].'#comment-'.$notifications[$i]['comment']['id'];
+            $slack_posts['url']     = 'https://'.Spaceid.'.backlog.jp/view/'.$notifications[$i]['issue']['issueKey'].'#comment-'.$notifications[$i]['comment']['id'];
             $slack_posts['summary'] = $notifications[$i]["issue"]["summary"];
             //実行
             echo post_2_slack($slack_posts['name'].'さんから<'.$slack_posts['url'].'|'.$slack_posts['summary'].'>の件のお知らせが届きました。');
