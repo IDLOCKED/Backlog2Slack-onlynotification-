@@ -5,6 +5,7 @@
  *
  */
 
+
 //Backlogスペース名
 define("Spaceid", "XXXXX");
 //BacklogAPIKEY
