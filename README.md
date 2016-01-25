@@ -1,4 +1,6 @@
 # Backlog2Slack
+[![Build Status](https://travis-ci.org/IDLOCKED/Backlog2Slack-onlynotification-.svg?branch=master)](https://travis-ci.org/IDLOCKED/Backlog2Slack-onlynotification-)
+
 Backlogの通知のみ取得してSlackに流します。
 
 Fatal error: Call to undefined function curl_init()がでたら下記参照
