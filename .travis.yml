@@ -3,5 +3,4 @@ rvm:
   - 5.3.1
   - 5.6.17
 script:
-  - php --version
-
+  - composer self-update
