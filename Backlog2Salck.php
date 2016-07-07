@@ -36,7 +36,7 @@ $notification_cnt = json_decode(get_backlog_data($api_url,$params), true);
 $last_created = file_get_contents(Filename);
 
 //新着確認
-if($notification_cnt['count']){
+if($notification_cnt['count'] !== 0)){
     $api_url = 'notifications';
     $params = array(
         'count' => 10,
