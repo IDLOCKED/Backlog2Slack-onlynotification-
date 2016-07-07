@@ -30,7 +30,7 @@ $params = array(
     'alreadyRead' => 0,
 );
 //実行
-$notification_cnt['count'] = json_decode(get_backlog_data($api_url,$params));
+$notification_cnt = json_decode(get_backlog_data($api_url,$params), true);
 
 //前回のcreated取得
 $last_created = file_get_contents(Filename);
